@@ -493,8 +493,8 @@ Figure 7a: An example of a hyperparameter axis plot for a model exhibiting train
 	- 🤖预热期间的裁剪怎么样？
 	- 理想的裁剪阈值略高于“典型”梯度范数。
 	- 这是梯度裁剪的一个例子：
-		- 如果梯度范数 ｜g｜大于梯度裁剪阈值 lambda，则进行以下操作
-		其中
+		- 如果梯度范数 ｜g｜大于梯度裁剪阈值 lambda，则进行以下操作g^{\prime}=\lambda \times \frac{g}{|g|}
+		其中g^{\prime}
 		是新梯度。
 
 	- 在训练期间记录未裁剪的梯度范数。默认生成：
